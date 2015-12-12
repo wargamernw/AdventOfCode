@@ -1,0 +1,97 @@
+﻿<Window x:Class="SelectDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+       <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox Grid.Row="0" Grid.Column="0" Text="Wire" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="0" Grid.Column="1" Text="Unset" Foreground="Silver" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="0" Grid.Column="2" Text="Red" Foreground="Red" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="0" Grid.Column="3" Text="White" Foreground="Gray" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="0" Grid.Column="4" Text="Blue" Foreground="Blue" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="0" Grid.Column="5" Text="Black" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="1" Grid.Column="0" Text="Wire 1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="2" Grid.Column="0" Text="Wire 2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="3" Grid.Column="0" Text="Wire 3" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="4" Grid.Column="0" Text="Wire 4" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="5" Grid.Column="0" Text="Wire 5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="6" Grid.Column="0" Text="Wire 6" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <RadioButton x:Name="Button1Unset" 
+                     Grid.Row="1" Grid.Column="1" GroupName="Wire1" BorderBrush="Silver" BorderThickness="3" HorizontalAlignment="Center" VerticalAlignment="Center" Checked="RadioButton_Checked"/>
+        <RadioButton x:Name="Button1Red" 
+                     Grid.Row="1" Grid.Column="2" GroupName="Wire1" BorderBrush="Red" BorderThickness="3" HorizontalAlignment="Center" VerticalAlignment="Center" Checked="RadioButton_Checked"/>
+        <RadioButton x:Name="Button1White" 
+                     Grid.Row="1" Grid.Column="3" GroupName="Wire1" BorderBrush="Gray" BorderThickness="3" HorizontalAlignment="Center" VerticalAlignment="Center" Checked="RadioButton_Checked"/>
+        <RadioButton x:Name="Button1Blue" 
+                     Grid.Row="1" Grid.Column="4" GroupName="Wire1" BorderBrush="Blue" BorderThickness="3" HorizontalAlignment="Center" VerticalAlignment="Center" Checked="RadioButton_Checked"/>
+        <RadioButton x:Name="Button1Black" 
+                     Grid.Row="1" Grid.Column="5" GroupName="Wire1" BorderBrush="Black" BorderThickness="3" HorizontalAlignment="Center" VerticalAlignment="Center" Checked="RadioButton_Checked"/>
+        <RadioButton x:Name="Button2Unset" 
+                     Grid.Row="2" Grid.Column="1" GroupName="Wire2" BorderBrush="Silver" BorderThickness="3" HorizontalAlignment="Center" VerticalAlignment="Center" Checked="RadioButton_Checked"/>
+        <RadioButton x:Name="Button2Red" 
+                     Grid.Row="2" Grid.Column="2" GroupName="Wire2" BorderBrush="Red" BorderThickness="3" HorizontalAlignment="Center" VerticalAlignment="Center" Checked="RadioButton_Checked"/>
+        <RadioButton x:Name="Button2White" 
+                     Grid.Row="2" Grid.Column="3" GroupName="Wire2" BorderBrush="Gray" BorderThickness="3" HorizontalAlignment="Center" VerticalAlignment="Center" Checked="RadioButton_Checked"/>
+        <RadioButton x:Name="Button2Blue" 
+                     Grid.Row="2" Grid.Column="4" GroupName="Wire2" BorderBrush="Blue" BorderThickness="3" HorizontalAlignment="Center" VerticalAlignment="Center" Checked="RadioButton_Checked"/>
+        <RadioButton x:Name="Button2Black" 
+                     Grid.Row="2" Grid.Column="5" GroupName="Wire2" BorderBrush="Black" BorderThickness="3" HorizontalAlignment="Center" VerticalAlignment="Center" Checked="RadioButton_Checked"/>
+        <RadioButton x:Name="Button3Unset" 
+                     Grid.Row="3" Grid.Column="1" GroupName="Wire3" BorderBrush="Silver" BorderThickness="3" HorizontalAlignment="Center" VerticalAlignment="Center" Checked="RadioButton_Checked"/>
+        <RadioButton x:Name="Button3Red" 
+                     Grid.Row="3" Grid.Column="2" GroupName="Wire3" BorderBrush="Red" BorderThickness="3" HorizontalAlignment="Center" VerticalAlignment="Center" Checked="RadioButton_Checked"/>
+        <RadioButton x:Name="Button3White" 
+                     Grid.Row="3" Grid.Column="3" GroupName="Wire3" BorderBrush="Gray" BorderThickness="3" HorizontalAlignment="Center" VerticalAlignment="Center" Checked="RadioButton_Checked"/>
+        <RadioButton x:Name="Button3Blue" 
+                     Grid.Row="3" Grid.Column="4" GroupName="Wire3" BorderBrush="Blue" BorderThickness="3" HorizontalAlignment="Center" VerticalAlignment="Center" Checked="RadioButton_Checked"/>
+        <RadioButton x:Name="Button3Black" 
+                     Grid.Row="3" Grid.Column="5" GroupName="Wire3" BorderBrush="Black" BorderThickness="3" HorizontalAlignment="Center" VerticalAlignment="Center" Checked="RadioButton_Checked"/>
+        <RadioButton x:Name="Button4Unset" 
+                     Grid.Row="4" Grid.Column="1" GroupName="Wire4" BorderBrush="Silver" BorderThickness="3" HorizontalAlignment="Center" VerticalAlignment="Center" Checked="RadioButton_Checked"/>
+        <RadioButton x:Name="Button4Red" 
+                     Grid.Row="4" Grid.Column="2" GroupName="Wire4" BorderBrush="Red" BorderThickness="3" HorizontalAlignment="Center" VerticalAlignment="Center" Checked="RadioButton_Checked"/>
+        <RadioButton x:Name="Button4White" 
+                     Grid.Row="4" Grid.Column="3" GroupName="Wire4" BorderBrush="Gray" BorderThickness="3" HorizontalAlignment="Center" VerticalAlignment="Center" Checked="RadioButton_Checked"/>
+        <RadioButton x:Name="Button4Blue" 
+                     Grid.Row="4" Grid.Column="4" GroupName="Wire4" BorderBrush="Blue" BorderThickness="3" HorizontalAlignment="Center" VerticalAlignment="Center" Checked="RadioButton_Checked"/>
+        <RadioButton x:Name="Button4Black" 
+                     Grid.Row="4" Grid.Column="5" GroupName="Wire4" BorderBrush="Black" BorderThickness="3" HorizontalAlignment="Center" VerticalAlignment="Center" Checked="RadioButton_Checked"/>
+        <RadioButton x:Name="Button5Unset" 
+                     Grid.Row="5" Grid.Column="1" GroupName="Wire5" BorderBrush="Silver" BorderThickness="3" HorizontalAlignment="Center" VerticalAlignment="Center" Checked="RadioButton_Checked"/>
+        <RadioButton x:Name="Button5Red" 
+                     Grid.Row="5" Grid.Column="2" GroupName="Wire5" BorderBrush="Red" BorderThickness="3" HorizontalAlignment="Center" VerticalAlignment="Center" Checked="RadioButton_Checked"/>
+        <RadioButton x:Name="Button5White" 
+                     Grid.Row="5" Grid.Column="3" GroupName="Wire5" BorderBrush="Gray" BorderThickness="3" HorizontalAlignment="Center" VerticalAlignment="Center" Checked="RadioButton_Checked"/>
+        <RadioButton x:Name="Button5Blue" 
+                     Grid.Row="5" Grid.Column="4" GroupName="Wire5" BorderBrush="Blue" BorderThickness="3" HorizontalAlignment="Center" VerticalAlignment="Center" Checked="RadioButton_Checked"/>
+        <RadioButton x:Name="Button5Black" 
+                     Grid.Row="5" Grid.Column="5" GroupName="Wire5" BorderBrush="Black" BorderThickness="3" HorizontalAlignment="Center" VerticalAlignment="Center" Checked="RadioButton_Checked"/>
+        <RadioButton x:Name="Button6Unset" 
+                     Grid.Row="6" Grid.Column="1" GroupName="Wire6" BorderBrush="Silver" BorderThickness="3" HorizontalAlignment="Center" VerticalAlignment="Center" Checked="RadioButton_Checked"/>
+        <RadioButton x:Name="Button6Red" 
+                     Grid.Row="6" Grid.Column="2" GroupName="Wire6" BorderBrush="Red" BorderThickness="3" HorizontalAlignment="Center" VerticalAlignment="Center" Checked="RadioButton_Checked"/>
+        <RadioButton x:Name="Button6White" 
+                     Grid.Row="6" Grid.Column="3" GroupName="Wire6" BorderBrush="Gray" BorderThickness="3" HorizontalAlignment="Center" VerticalAlignment="Center" Checked="RadioButton_Checked"/>
+        <RadioButton x:Name="Button6Blue" 
+                     Grid.Row="6" Grid.Column="4" GroupName="Wire6" BorderBrush="Blue" BorderThickness="3" HorizontalAlignment="Center" VerticalAlignment="Center" Checked="RadioButton_Checked"/>
+        <RadioButton x:Name="Button6Black" 
+                     Grid.Row="6" Grid.Column="5" GroupName="Wire6" BorderBrush="Black" BorderThickness="3" HorizontalAlignment="Center" VerticalAlignment="Center" Checked="RadioButton_Checked"/>
+        <TextBox x:Name="Success" Text="Success" Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="3" Grid.RowSpan="2" FontSize="70" VerticalAlignment="Center" HorizontalAlignment="Center" Background="Transparent" Visibility="Hidden"/>
+    </Grid>
+</Window>
