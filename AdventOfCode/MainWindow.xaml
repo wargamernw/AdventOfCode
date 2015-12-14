@@ -1,23 +1,49 @@
 ﻿<Window x:Class="AdventOfCode.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="750" Width="330">
     <Grid x:Name="AdventOfCode">
-        <StackPanel>
+        <StackPanel Margin="0,5" >
+            <StackPanel.Resources>
+                <Style TargetType="{x:Type StackPanel}">
+                    <Setter Property="Margin" Value="0,5"/>
+                </Style>
+            </StackPanel.Resources>
             <StackPanel Orientation="Horizontal">
                 <TextBox Text="Day 1" Margin="5, 0"/>
-                <TextBox Text="{Binding Day1Result, FallbackValue=Unknown}" Margin="5,0"/>
-                <TextBox Text="{Binding Day1Result2, FallbackValue=Unknown}" Margin="5,0"/>
+                <TextBox Text="{Binding Day1Result, FallbackValue=Unknown}" Margin="5,0" MinWidth="80" />
+                <TextBox Text="{Binding Day1Result2, FallbackValue=Unknown}" Margin="5,0" MinWidth="80"/>
+                <Button Content="Process Answer" Click="Button1_Click"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <TextBox Text="Day 2" Margin="5, 0"/>
-                <TextBox Text="{Binding Day2Result, FallbackValue=Unknown}" Margin="5,0"/>
-                <TextBox Text="{Binding Day2Result2, FallbackValue=Unknown}" Margin="5,0"/>
+                <TextBox Text="{Binding Day2Result, FallbackValue=Unknown}" Margin="5,0" MinWidth="80"/>
+                <TextBox Text="{Binding Day2Result2, FallbackValue=Unknown}" Margin="5,0" MinWidth="80"/>
+                <Button Content="Process Answer" Click="Button2_Click"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <TextBox Text="Day 3" Margin="5, 0"/>
-                <TextBox Text="{Binding Day3Result, FallbackValue=Unknown}" Margin="5,0"/>
-                <TextBox Text="{Binding Day3Result3, FallbackValue=Unknown}" Margin="5,0"/>
+                <TextBox Text="{Binding Day3Result, FallbackValue=Unknown}" Margin="5,0" MinWidth="80"/>
+                <TextBox Text="{Binding Day3Result2, FallbackValue=Unknown}" Margin="5,0" MinWidth="80"/>
+                <Button Content="Process Answer" Click="Button3_Click"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBox Text="Day 4" Margin="5, 0"/>
+                <TextBox Text="{Binding Day4Result, FallbackValue=Unknown}" Margin="5,0" MinWidth="80"/>
+                <TextBox Text="{Binding Day4Result2, FallbackValue=Unknown}" Margin="5,0" MinWidth="80"/>
+                <Button Content="Process Answer" Click="Button4_Click"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBox Text="Day 5" Margin="5, 0"/>
+                <TextBox Text="{Binding Day5Result, FallbackValue=Unknown}" Margin="5,0" MinWidth="80"/>
+                <TextBox Text="{Binding Day5Result2, FallbackValue=Unknown}" Margin="5,0" MinWidth="80"/>
+                <Button Content="Process Answer" Click="Button5_Click"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBox Text="Day 6" Margin="5, 0"/>
+                <TextBox Text="{Binding Day6Result, FallbackValue=Unknown}" Margin="5,0" MinWidth="80"/>
+                <TextBox Text="{Binding Day6Result2, FallbackValue=Unknown}" Margin="5,0" MinWidth="80"/>
+                <Button Content="Process Answer" Click="Button6_Click"/>
             </StackPanel>
             <Button Content="Process Answers" Margin="20" MinHeight="30" Click="Button_Click"/>
         </StackPanel>
