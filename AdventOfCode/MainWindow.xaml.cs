@@ -42,6 +42,24 @@ namespace AdventOfCode
         public string Day7Result { get; set; }
         public string Day7Result2 { get; set; }
 
+        public string Day8Result { get; set; }
+        public string Day8Result2 { get; set; }
+
+        public string Day9Result { get; set; }
+        public string Day9Result2 { get; set; }
+
+        public string Day10Result { get; set; }
+        public string Day10Result2 { get; set; }
+
+        public string Day11Result { get; set; }
+        public string Day11Result2 { get; set; }
+
+        public string Day12Result { get; set; }
+        public string Day12Result2 { get; set; }
+
+        public string Day13Result { get; set; }
+        public string Day13Result2 { get; set; }
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         protected void OnPropertyChanged(string propertyName)
@@ -128,6 +146,15 @@ namespace AdventOfCode
             OnPropertyChanged("Day7Result");
             Day7Result2 = optional.ToString();
             OnPropertyChanged("Day7Result2");
+        }
+
+        private void Button8_Click(object sender, RoutedEventArgs e)
+        {
+            long optional;
+            Day8Result = Day8.ProcessDay8(out optional).ToString();
+            OnPropertyChanged("Day8Result");
+            Day8Result2 = optional.ToString();
+            OnPropertyChanged("Day8Result2");
         }
     }
 }

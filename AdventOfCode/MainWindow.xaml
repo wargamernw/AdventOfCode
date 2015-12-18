@@ -45,6 +45,18 @@
                 <TextBox Text="{Binding Day6Result2, FallbackValue=Unknown}" Margin="5,0" MinWidth="80"/>
                 <Button Content="Process Answer" Click="Button6_Click"/>
             </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBox Text="Day 7" Margin="5, 0"/>
+                <TextBox Text="{Binding Day7Result, FallbackValue=Unknown}" Margin="5,0" MinWidth="80"/>
+                <TextBox Text="{Binding Day7Result2, FallbackValue=Unknown}" Margin="5,0" MinWidth="80"/>
+                <Button Content="Process Answer" Click="Button7_Click"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBox Text="Day 8" Margin="5, 0"/>
+                <TextBox Text="{Binding Day8Result, FallbackValue=Unknown}" Margin="5,0" MinWidth="80"/>
+                <TextBox Text="{Binding Day8Result2, FallbackValue=Unknown}" Margin="5,0" MinWidth="80"/>
+                <Button Content="Process Answer" Click="Button8_Click"/>
+            </StackPanel>
             <Button Content="Process Answers" Margin="20" MinHeight="30" Click="Button_Click"/>
         </StackPanel>
     </Grid>

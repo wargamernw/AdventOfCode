@@ -65,6 +65,7 @@
     <Compile Include="Day1.cs" />
     <Compile Include="Day2.cs" />
     <Compile Include="Day4.cs" />
+    <Compile Include="Day8.cs" />
     <Compile Include="Day7.cs" />
     <Compile Include="Day6.cs" />
     <Compile Include="Day5.cs" />
@@ -101,13 +102,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Day2.txt" />
-    <Resource Include="Day5.txt" />
-    <Resource Include="Day6.txt" />
+    <Resource Include="Data\Day2.txt" />
+    <Resource Include="Data\Day5.txt" />
+    <Resource Include="Data\Day6.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Day7.txt" />
+    <Resource Include="Data\Day7.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Data\Day8.txt" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
